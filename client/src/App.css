@@ -1,0 +1,90 @@
+:root {
+  --green: #35654d;
+  --yellow: #F5F749;
+  --title-text: 'Rye', cursive;
+  --body-text: 'Quicksand', sans-serif;
+}
+
+.App {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  background-color: var(--green);
+  font-family: var(--body-text);
+}
+
+.App {
+  text-align: center;
+}
+
+.table {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.main-title {
+  font-family: var(--title-text);
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+.blackjack-rules {
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blackjack-rules__img {
+  max-width: 450px;
+  width: 100%;
+}
+
+.rules-step {
+  text-align: left;
+}
+
+.card {
+  height: 200px;
+  width: 143.95px;
+  margin: 0 0.5rem
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  border: 0.25rem solid;
+  width: 60%;
+  border-radius: 2rem;
+  margin: 2rem auto;
+}
+
+.outcome {
+  font-family: var(--title-text);
+  font-size: 4em;
+  margin: 1rem 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 107.95px;
+    height: 150px;
+  }
+
+  .App {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 72px;
+    height: 100px;
+  }
+}
